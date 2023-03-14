@@ -1,0 +1,20 @@
+{%extends "base.html" %}
+{%block title%} Change Information page {%endblock%}
+{%block content%}
+<h1 align="center"> Đổi thông tin cá nhân</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="email">Email New</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="user_name">User Name New</label>
+        <input type="text" class="form-control" id="name" name="user_name" placeholder="Enter user name">
+    </div>
+    <div class="form-group">
+        <label for="password">Password Hiện Tại</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{%endblock%}
